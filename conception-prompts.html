@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The first stage of writing, where you gather ideas and decide what you're going to write about.">
+    <meta name="author" content="Nathan Hobbs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPlay | Conception - Prompts</title>
+
+    <!-- Bootstrap v4.4.1 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
+    
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+    <!--Navigation-->
+    <ul class="nav justify-content-center m-4">
+        <li class="nav-item mr-auto text-left">
+            <a class="nav-link text-dark" href="index.html">WordPlay</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="conception.html">Conception</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="progression.html">Progression</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="reflection.html">Reflection</a>
+        </li>
+    </ul>
+
+    <h1 class="text-center">Conception</h1>
+    <h2 class="text-center">Lesson 3: Prompts</h2>
+
+    <p class="m-4">You've decided on a writing a style, you've found your voice, so now it's time to write! Right? No? What do you mean you don't have any ideas? Okay, so this isn't a "lesson" in the traditional sense, but it can be very helpful for those who get stuck. The way this is going to work is pretty straightforward: I, the author of this site, am going to provide you with some prompts sorted by the three main writing styles (which, in case you forgot, are Prose/Fiction, Poetry, and Nonfiction.) Then you, the reader of this site, are going to select one that suits you and have at it! 15 minutes ought to do it! Once you finish that one, you can always come back for more! Now you can't use the "I don't have ideas" excuse anymore! On your mark, get set, go! Happy writing!</p>
+
+    <form>
+        <div class="form-group text-center">
+            <label for="proseTextbox"></label>
+            <textarea class="form-control" id="proseTextbox" rows="3"></textarea>
+        </div>
+    </form>
+
+
+    <div class="text-center">
+        <button type="button" class="btn btn-success" id="proseButton">Give me a prose prompt!</button>
+    </div>
+
+    <form>
+        <div class="form-group text-center">
+            <label for="poetryTextbox"></label>
+            <textarea class="form-control" id="poetryTextbox" rows="3"></textarea>
+        </div>
+    </form>
+
+    <div class="text-center">
+        <button type="button" class="btn btn-success" id="poetryButton">Give me a poetry prompt!</button>
+    </div>
+
+    <form>
+        <div class="form-group text-center">
+            <label for="nonfictionTextbox"></label>
+            <textarea class="form-control" id="nonfictionTextbox" rows="3"></textarea>
+        </div>
+    </form>
+
+    <div class="text-center">
+        <button type="button" class="btn btn-success" id="nonfictionButton">Give me a nonfiction prompt!</button>
+    </div>
+    
+    <!--Links to external Prompts -->
+    <h3 class="m-4">Additional Prompts from external sources:</h3>
+
+    <!--Pagination -->
+    <nav aria-label="Page navigation example" class="m-4">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="conception.html" tabindex="-1">Lesson 1: Writing Styles</a></li>
+            <li class="page-item"><a class="page-link" href="conception-voice.html">Lesson 2: Voice</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#" aria-disabled="true">Lesson 3: Prompts</a></li>
+        </ul>
+    </nav>
+    
+    <!--Copyright-->
+    <footer>
+        <p class="text-center">&copy; Nathan Hobbs 2020</p>
+    </footer>
+
+    <!-- jQuery and Bootstrap links - do not delete! -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- end of do not delete -->
+
+    <!--Script that adds prompts, at random, to a textbox -->
+    <script>
+        var prosePrompts = ["You wake up and the only thing you can remember is that you're supposed to have a date with a wizard", "Your pet unicorn is upset that you have been focusing more on the pet dragon", "A boy/girl discovers a body in the woods", "Turn to page 42 in the nearest book. The first sentence is the first sentence of your whodunit story", "The world is ending in 10 days, but you get to pick who survives on the generation ship.", "While on vacation, you discover an old abandoned ghost town with a cave.", "You wake up to find that you've aged exactly ten years", "A boy's/girl's first encounter with a dating app goes horribly wrong", "A man/woman sees a ghost who believes he/she's a ninja.", "Write about an alternate timeline where Steve Jobs becomes a painter and the iPhone is never invented.", "A couple falls in love after a strange occurence involving a haunted house.", "A former detective is trying to apply for a job, but nobody believes his story.", "Write a story in which two of your favorite universes collide (ex. Star Wars and Harry Potter)", "Indiana Jones nearly got to explore a haunted house once (seriously!) Tell this story."];
+
+        var poetryPrompts = ["Write about a leaf's journey from the tree to the ground", "Write about something that you've never shared before", "Send a letter to your younger self", "If you were a food, what would you be and why?", "Write about the meaning of life using no more than 42 words.", "Write about a transformative moment in your life.", "Look up inspirational quotes. Use one for the beginning of the poem and one for the end. The rest is up to you.", "Summarize a movie using rhymes. Each line of the poem can be no longer than seven words.", "Write a poem about one of the seven deadly sins.", "Write a poem about how to write a poem.", "Write a poem about a bakery or candy shop, and make sure to describe the smells!", "Pick a flower and describe its history and interests."];
+
+        var nonfictionPromps = ["Tell the story of your greatest accomplishment.", "If you could change anything about your life, what would it be and why?", "Write about your dream vacation. Plan out all the juicy details.", "Recall a time you laughed really hard and write about what was so funny.", "Tell the story of your most memorable theme park visit.", "Write a book report for your favorite book. What about it do you really like?", "Pick a hobby you really enjoy and write as much as you can about it. Think of it like trying to write a self help book.", "Create a diary of major life events.", "Make a memoir detailing the important stages of your life", "Create a list of everything you've ever wanted to do but never had time for. Write about the three that mean the most to you."];
+
+        $("#proseButton").click(function() {
+            $("#proseTextbox").text(prosePrompts[Math.floor(Math.random() * (prosePrompts.length))]);
+        });
+
+        $("#poetryButton").click(function() {
+            $("#poetryTextbox").text(poetryPrompts[Math.floor(Math.random() * (poetryPrompts.length))]);
+        });
+
+        $("#nonfictionButton").click(function() {
+            $("#nonfictionTextbox").text(nonfictionPromps[Math.floor(Math.random() * (nonfictionPromps.length))]);
+        });
+    </script>
+
+</body></html>
