@@ -17,6 +17,19 @@ h3, h4, h5, p {
 p {
     text-align: justify;
 }
+
+/*
+.carousel-caption {
+    display: block;
+}
+*/
+
+.carousel-caption > p{
+    display: block;
+    text-align: center;
+/*    top: 60%;*/
+/*    transform: translateY(-100%);*/
+}
 /*
 flip card
 */

@@ -11,11 +11,11 @@
     <!-- Bootstrap v4.4.1 -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
-    
+
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
 </head>
 
@@ -36,12 +36,76 @@
             <a class="nav-link" href="reflection.html">Reflection</a>
         </li>
     </ul>
-    
+
     <h1 class="text-center">Progression</h1>
     <h2 class="text-center">Lesson 1: Motivation</h2>
-    
 
+    <p class="m-4">Life sometimes gets in the way. Schedules become hectic, crises get in the way, and time seems to evaporate right before your eyes. Perhaps you're trying to graduate on time. Maybe you're in the middle of planning a wedding. So many other things seem more important. "I'll do it tomorrow," you say. The next day you say it again. And again. And again. Does this sound like you? If so, you're not alone. This is a prety common reason for procrastinating on writing (or any other thing you'd like to get done, for that matter). But here's a fun little factoid: tomorrow doesn't exist. You will never reach tomorrow, so stop telling yourself you can. It's always today. </p>
+
+    <p class="m-4">Maybe this doesn't sound like you. Maybe you feel like you have all the time in the world, but are lacking the energy and enthusiasm to continue with writing. We all have those days - even the best writers in the world.</p>
+
+    <p class="m-4">Or, perhaps, your schedule lets you write and you have the energy but don't feel like putting in any effort. All of these scenarios are quite possible.</p>
+
+    <p class="m-4">So the question remains: How do you find motivation to write?</p>
+
+    <p class="m-4">Short answer: Different strokes for different blokes. There's no one-size-fits-all solution here. However, there are some methods that are often helpful.</p>
+
+    <p class="m-4">Below is a list of short tips for getting that wonderful motivation back. Click the buttons for the expanded view.</p>
+
+
+    <!--Potentially consider making it appear to the side. Might not work very well for mobile though.-->
+    <div class="text-center">
+        <button class="btn btn-primary btn-block mb-3" type="button" data-toggle="collapse" data-target="#setAsideTime" aria-expanded="false" aria-controls="setAsideTime">
+            Set aside time
+        </button>
+
+        <div class="collapse" id="setAsideTime">
+            <div class="card card-body text-justify">
+                Devote a very small portion of your day to writing and plan for it in your calendar. Even something as short as 10-15 minutes a day can make a big difference. That's less than the length of a TV show!
+            </div>
+        </div>
+    </div>
     
+    <div class="text-center">
+        <button class="btn btn-primary btn-block mb-3" type="button" data-toggle="collapse" data-target="#makeEnvironmentFun" aria-expanded="false" aria-controls="makeEnvironmentFun">
+            Make your environment fun
+        </button>
+
+        <div class="collapse" id="makeEnvironmentFun">
+            <div class="card card-body text-justify">
+                Keeping your work life separate from your writing life can help create an environment that's conducive to productive writing. If you are writing somewhere you'll enjoy it, you'll be more likely to want to go to your writing place more often. Try writing in a bean bag chair. Or a hammock. Or your bed! Try writing outdoors. You'll know it's a good fit for you when you start to look forward to writing time.
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-center">
+        <button class="btn btn-primary btn-block mb-3" type="button" data-toggle="collapse" data-target="#challengeYourself" aria-expanded="false" aria-controls="challengeYourself">
+            Challenge Yourself
+        </button>
+
+        <div class="collapse" id="challengeYourself">
+            <div class="card card-body text-justify">
+                Make it a game. See how many words you can type in the time you have. See if you can break any of the standard conventions of writing. Play around with formatting and see if you can spell shapes with your words. Anything is fair game, as long as it gets you writing!
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-center">
+        <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#rewardYourself" aria-expanded="false" aria-controls="rewardYourself">
+            Reward Yourself
+        </button>
+
+        <div class="collapse" id="rewardYourself">
+            <div class="card card-body text-justify">
+                Rewards could come in many forms. You could use your favorite show as an incentive to write - you get to watch your favorite show after your writing session. Perhaps you're more of a chocolate and sweets person. You could reward yourself on days where you write a certain amount. If you made an unusually large amount of progress, you could reward yourself with tickets to a big game or concert. The choice is yours!
+            </div>
+        </div>
+    </div>
+    <!--
+    <label for="TimerSlider" class="m-4" id="timerLabel">Set a Timer</label>
+    <input type="range" class="custom-range m-4" min="0" max="1" step="0.01" value="0" id="TimerSlider">
+-->
+
     <!--Pagination -->
     <nav aria-label="Page navigation example" class="m-4">
         <ul class="pagination justify-content-center">
@@ -50,10 +114,29 @@
             <li class="page-item"><a class="page-link" href="progression-practice.html">Lesson 3: Practice</a></li>
         </ul>
     </nav>
-    
+
     <!--Copyright-->
     <footer>
         <p class="text-center">&copy; Nathan Hobbs 2020</p>
     </footer>
 
-</body></html>
+
+    <!-- jQuery and Bootstrap links - do not delete! -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- end of do not delete -->
+
+
+    <!--Script that lets you toggle between two values with a slider-->
+    <!--
+    <script>
+        var setTimeLimit = $('#timerLabel').slider("option", "value");
+        console.log(setTimeLimit);
+        if (setTimeLimit == 1) {
+            $("#timerLabel").text("This is a test.");
+        }
+    </script>
+-->
+</body>
+
+</html>
