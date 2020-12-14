@@ -18,18 +18,18 @@ p {
     text-align: justify;
 }
 
-/*
 .carousel-caption {
     display: block;
 }
-*/
 
-.carousel-caption > p{
+.carousel-caption > p {
     display: block;
     text-align: center;
-/*    top: 60%;*/
-/*    transform: translateY(-100%);*/
+    top: 60%;
+    transform: translateY(-50%);
 }
+
+
 /*
 flip card
 */
