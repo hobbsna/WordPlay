@@ -19,14 +19,41 @@ p {
 }
 
 .carousel-caption {
-    display: block;
+/*    position: relative;*/
+    
 }
 
-.carousel-caption > p {
-    display: block;
+/*.carousel-caption > p {*/
+/*    display: block;*/
+  
+    
+/*
     text-align: center;
     top: 60%;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
+*/
+/*}*/
+
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    .carousel-caption > p {
+/*        top: 20%;*/
+        transform: translateY(-260%);
+    }
+    
+    .carousel-caption > p.display-5 {
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .carousel-caption > p {
+        transform: translateY(-300%);
+    }
+    .carousel-caption > p.display-5 {
+        font-size: 150%;
+    }
+    
 }
 
 
