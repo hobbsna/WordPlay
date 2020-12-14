@@ -33,7 +33,11 @@ p {
     transform: translateY(-60%);
 */
 /*}*/
-
+@media screen and (max-width: 768px) {
+    .carousel-caption > p {
+        transform: translateY(30%);
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
     .carousel-caption > p {
