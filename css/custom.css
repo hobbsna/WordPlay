@@ -62,14 +62,14 @@ p {
     
 }
 
-.card {
+.conception-cards .card {
   background-color: transparent;
   width: 300px;
   height: 300px;
   perspective: 1000px;
 }
 
-.card-inner {
+.conception-cards .card-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -78,11 +78,11 @@ p {
   transform-style: preserve-3d;
 }
 
-.card.active .card-inner {
+.conception-cards .card.active .card-inner {
   transform: rotateY(180deg);
 }
 
-.card img, .card-img-overlay {
+.conception-cards .card img, .card-img-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -90,7 +90,7 @@ p {
   top:0;left:0;right:0;
 }
 
-.card-body {
+.conception-cards .card-body {
   transform: rotateY(180deg);
   background:blue;
   color:white;
