@@ -65,6 +65,7 @@ p {
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
+    /*Firefox workaround*/
     transform: rotateX(0deg);
 }
 

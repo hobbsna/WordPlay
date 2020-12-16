@@ -12,11 +12,11 @@
     <!-- Bootstrap v4.4.1 -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
-    
+
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
 </head>
 
@@ -43,10 +43,10 @@
     <h2 class="text-center">Lesson 3: Prompts</h2>
 
     <!--Explanation of best practices for using the prompt pickers -->
-    <p class="m-4">You've decided on a writing style and you've found your voice, so now it's time to write! Right? No? What do you mean you don't have any ideas? Okay, so this isn't a "lesson" in the traditional sense, but it can be very helpful for those who get stuck. The way this is going to work is pretty straightforward: I, the author of this site, am going to provide you with some prompts sorted by the three main writing styles (which, in case you forgot, are Prose/Fiction, Poetry, and Nonfiction.) Then you, the reader of this site, are going to select one that suits you and have at it! 15 minutes ought to do it! Once you finish that one, you can always come back for more later! Now you can't use the "I don't have ideas" excuse anymore! On your mark, get set, go! Happy writing!</p>
+    <p class="m-4">You've decided on a writing style and you've found your voice, so now it's time to write! Right? No? What do you mean you don't have any ideas? Okay, so this isn't a "lesson" in the traditional sense, but it can be very helpful for those who get stuck. The way this is going to work is pretty straightforward: I, the author of this site, am going to provide you with some prompts sorted by the three main writing styles (which, in case you forgot, are prose/fiction, poetry, and nonfiction.) Then you, the reader of this site, are going to select one that suits you and have at it! 15 minutes ought to do it! Once you finish that one, you can always come back for more later! Now you can't use the "I don't have ideas" excuse anymore! On your mark, get set, go! Happy writing!</p>
 
     <!--The website starts with blank text fields above buttons. Clicking the buttons adds "random" values from arrays of values and displays them in the text fields.-->
-    
+
     <!--Prose textbox -->
     <form>
         <div class="form-group text-center">
@@ -72,7 +72,7 @@
     <div class="text-center">
         <button type="button" class="btn btn-success" id="poetryButton">Give me a poetry prompt!</button>
     </div>
-    
+
     <!--Nonfiction textbox -->
     <form>
         <div class="form-group text-center">
@@ -85,9 +85,24 @@
     <div class="text-center">
         <button type="button" class="btn btn-success" id="nonfictionButton">Give me a nonfiction prompt!</button>
     </div>
-    
-    <!--Links to external Prompts: Still need to be added -->
-    <h3 class="m-4">Additional Prompts from external sources:</h3>
+
+    <!--Links to external Prompts -->
+    <h2 class="text-center m-4">Additional Prompts</h2>
+
+    <div class="row">
+        <div class="text-center col-md-4 mb-4">
+            <a href="https://blog.reedsy.com/creative-writing-prompts/" target="_blank" class="btn btn-primary btn-lg" role="button">Reedsy</a>
+        </div>
+
+        <div class="text-center col-md-4 mb-4">
+            <a href="https://self-publishingschool.com/fiction-creative-writing-prompts/" target="_blank" class="btn btn-primary btn-lg" role="button">Self-Publishing School</a>
+        </div>
+
+        <div class="text-center col-md-4 mb-4">
+            <a href="https://www.writtenwordmedia.com/500-writing-prompts-to-help-beat-writers-doubt/" target="_blank" class="btn btn-primary btn-lg" role="button">WrittenWordMedia</a>
+        </div>
+    </div>
+
 
     <!--Pagination -->
     <nav aria-label="Page navigation example" class="m-4">
@@ -97,7 +112,7 @@
             <li class="page-item disabled"><a class="page-link" href="#" aria-disabled="true">Lesson 3: Prompts</a></li>
         </ul>
     </nav>
-    
+
     <!--Copyright-->
     <footer>
         <p class="text-center">&copy; Nathan Hobbs 2020</p>
@@ -114,7 +129,7 @@
 
         var poetryPrompts = ["Write about a leaf's journey from the tree to the ground.", "Write about something that you've never shared before.", "Send a letter to your younger self.", "If you were a food, what would you be and why?", "Write about the meaning of life using no more than 42 words.", "Write about a transformative moment in your life.", "Look up inspirational quotes. Use one for the beginning of the poem and one for the end. The rest is up to you.", "Summarize a movie using rhymes. Each line of the poem can be no longer than seven words.", "Write a poem about one of the seven deadly sins.", "Write a poem about how to write a poem.", "Write a poem about a bakery or candy shop, and make sure to describe the smells!", "Pick a flower and describe its history and interests.", "Write a poem to the Tooth Fairy explaining why she's important to you.", "Describe a play using free verse.", "Find a fortune cookie (there's bound to be some online!) and write about what it means to you.", "Discuss the significance of your favorite planet."];
 
-        var nonfictionPromps = ["Tell the story of your greatest accomplishment.", "If you could change anything about your life, what would it be and why?", "Write about your dream vacation. Plan out all the juicy details.", "Recall a time you laughed really hard and write about what was so funny.", "Tell the story of your most memorable theme park visit.", "Write a book report for your favorite book. What about it do you really like?", "Pick a hobby you really enjoy and write as much as you can about it. Think of it like trying to write a self help book.", "Create a diary of major life events.", "Make a memoir detailing the important stages of your life", "Create a list of everything you've ever wanted to do but never had time for. Write about the three that mean the most to you.", "Draft a bucket list. Shape the list like a bucket if you want.", "Write about the life of someone with a disability.", "Write about a historical figure's life.", "Select a moment from the last ten days and describe it in enough detail that someone could draw it.", "Help people learn a new recipe."];
+        var nonfictionPromps = ["Tell the story of your greatest accomplishment.", "If you could change anything about your life, what would it be and why?", "Write about your dream vacation. Plan out all the juicy details.", "Recall a time you laughed really hard and write about what was so funny.", "Tell the story of your most memorable theme park visit.", "Write a book report for your favorite book. What about it do you really like?", "Pick a hobby you really enjoy and write as much as you can about it. Think of it like trying to write a self help book.", "Create a diary of major life events.", "Make a memoir detailing the important stages of your life", "Create a list of everything you've ever wanted to do but never had time for. Write about the three that mean the most to you.", "Draft a bucket list. Shape the list like a bucket if you want.", "Write about the life of someone with a disability.", "Write about a historical figure's life.", "Select a moment from the last ten days and describe it in enough detail that someone could draw it.", "Help people learn a new recipe.", "Make a list of all the things you're thankful for. Pretend like you'll lose anything you don't list. Pick five from the list and write about those."];
 
         $("#proseButton").click(function() {
             $("#proseTextbox").text(prosePrompts[Math.floor(Math.random() * (prosePrompts.length))]);
