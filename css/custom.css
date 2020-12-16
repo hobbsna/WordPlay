@@ -55,7 +55,6 @@ p {
     perspective: 1000px;
     /*Firefox workaround */
     transform: rotateX(0deg);
-/*    -moz-backface-visibility: hidden;*/
 }
 
 .conception-cards .card-inner {
