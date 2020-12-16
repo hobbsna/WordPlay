@@ -67,7 +67,11 @@ p {
   width: 300px;
   height: 300px;
   perspective: 1000px;
-  transform: rotateX(0deg);
+/*  transform: rotateX(0deg);*/
+  -moz-backface-visibility: hidden;
+
+
+
 }
 
 .conception-cards .card-inner {
